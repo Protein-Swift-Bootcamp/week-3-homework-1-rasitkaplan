@@ -13,6 +13,7 @@
 		6C73F4AC2955D3380034D62C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C73F4AA2955D3380034D62C /* Main.storyboard */; };
 		6C73F4AE2955D33A0034D62C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C73F4AD2955D33A0034D62C /* Assets.xcassets */; };
 		6C73F4B12955D33A0034D62C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C73F4AF2955D33A0034D62C /* LaunchScreen.storyboard */; };
+		6C73F4B92955D3770034D62C /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C73F4B82955D3770034D62C /* UserInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		6C73F4AD2955D33A0034D62C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C73F4B02955D33A0034D62C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C73F4B22955D33A0034D62C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C73F4B82955D3770034D62C /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				6C73F4A42955D3380034D62C /* AppDelegate.swift */,
 				6C73F4A62955D3380034D62C /* SceneDelegate.swift */,
 				6C73F4A82955D3380034D62C /* ViewController.swift */,
+				6C73F4B82955D3770034D62C /* UserInfoViewController.swift */,
 				6C73F4AA2955D3380034D62C /* Main.storyboard */,
 				6C73F4AD2955D33A0034D62C /* Assets.xcassets */,
 				6C73F4AF2955D33A0034D62C /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C73F4A92955D3380034D62C /* ViewController.swift in Sources */,
+				6C73F4B92955D3770034D62C /* UserInfoViewController.swift in Sources */,
 				6C73F4A52955D3380034D62C /* AppDelegate.swift in Sources */,
 				6C73F4A72955D3380034D62C /* SceneDelegate.swift in Sources */,
 			);

@@ -7,23 +7,44 @@
 
 import UIKit
 
-class UserInfoViewController: UIViewController {
+protocol MyDataSendingDelegate: AnyObject {
+    func name(name: String)
+    func surname(surname: String)
+    func age(age: String)
+    func city(city: String)
+}
 
+class UserInfoViewController: UIViewController {
+    
+    var text : String = ""
+    
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var surnameTextField: UITextField!
+    @IBOutlet weak var ageTextField: UITextField!
+    @IBOutlet weak var cityTextField: UITextField!
+    
+    weak var delegate: MyDataSendingDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        nameTextField.text = text
+        surnameTextField.text = text
+        ageTextField.text = text
+        cityTextField.text = text
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewWillDisappear(_ animated: Bool) {
+        if let name = nameTextField.text {
+            self.delegate?.name(name: name)
+        }
+        if let surname = surnameTextField.text {
+            self.delegate?.surname(surname: surname)
+        }
+        if let age = ageTextField.text {
+            self.delegate?.age(age: age)
+        }
+        if let city = cityTextField.text {
+            self.delegate?.city(city: city)
+        }
     }
-    */
-
 }
